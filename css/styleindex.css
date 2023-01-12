@@ -74,9 +74,9 @@ body {
   display: flex;
   width: 100%;
 }
-#introduction img{
+#introduction img {
   width: 75%;
-  position: relative
+  position: relative;
 }
 #introduction .col-lg-3 {
   padding: 30px;
@@ -93,12 +93,12 @@ body {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-#coaches h1{
+#coaches h1 {
   text-align: center;
   background-color: #ebe7db;
   color: #0c1e40;
   padding: 20px;
-  font-family: 'AvoBoldIta';
+  font-family: "AvoBoldIta";
 }
 
 .gallery {
@@ -108,6 +108,92 @@ body {
 div.center-wrap {
   display: flex;
   justify-content: center;
+}
+
+body #posts {
+  justify-content: center;
+  text-align: center;
+  background-color: #ebe7db;
+  padding: 40px;
+  margin-top: 10px;
+}
+body #videos {
+  justify-content: center;
+  text-align: center;
+  background-color: #e75639;
+  padding: 40px;
+  margin-top: 10px;
+}
+
+body #news {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+body h2 {
+  padding: 25px;
+  scale: 1.14;
+}
+
+body #posts h2 {
+  background-color: #e75639;
+  position: relative;
+  top: -40px;
+  color: #ebe7db;
+  font-family: "FB";
+}
+body #videos h2 {
+  color: #e75639;
+  background-color: #ebe7db;
+  position: relative;
+  top: -40px;
+  font-family: "FB";
+}
+
+#posts .more-info a{
+  background-color: #e75639;
+  position: relative;
+  color: #ebe7db;
+  font-family: "FB";
+  top: 20px;
+  text-decoration: none;
+  width: 100%;
+  padding: 10px;
+  transition: 0.4s;
+}
+#videos .more-info a{
+  background-color:#ebe7db ;
+  position: relative;
+  color: #e75639;
+  font-family: "FB";
+  top: 20px;
+  text-decoration: none;
+  width: 100%;
+  padding: 10px;
+  transition: 0.4s;
+}
+#posts .more-info a:hover{
+  background-color: #0b094d;
+  position: relative;
+  color: #ebe7db;
+  font-family: "FB";
+  top: 20px;
+  text-decoration: none;
+  width: 100%;
+  padding: 10px;
+  transition: 0.4s;
+}
+#videos .more-info a:hover{
+  background-color: #0b094d;
+  position: relative;
+  color: #ebe7db;
+  font-family: "FB";
+  top: 20px;
+  text-decoration: none;
+  width: 100%;
+  padding: 10px;
+  transition: 0.4s;
 }
 
 .gallery img {
@@ -127,7 +213,6 @@ div.center-wrap {
   font-family: "AvoBold";
 }
 
-
 .container footer div {
   padding: 30px;
 }
@@ -136,11 +221,13 @@ div.center-wrap {
   display: flex;
 }
 
-.high-coaches, .low-coaches {
+.high-coaches,
+.low-coaches {
   display: flex;
 }
 
-.high-coaches div, .low-coaches div {
+.high-coaches div,
+.low-coaches div {
   padding: 15px;
   margin: 30px;
   margin-left: auto;
@@ -150,7 +237,8 @@ div.center-wrap {
   font-family: "Helvetica";
   font-size: 20px;
 }
-.high-coaches div img, .low-coaches div img{
+.high-coaches div img,
+.low-coaches div img {
   align-items: center;
   position: relative;
   left: -15px;
@@ -159,15 +247,15 @@ div.center-wrap {
 }
 
 @media only screen and (max-width: 1200px) {
-*{
-  max-width: 739px;
-}
+  * {
+    max-width: 739px;
+  }
 
   #introduction {
     display: block;
     width: 100%;
   }
-  #introduction img{
+  #introduction img {
     width: 100%;
   }
   #introduction .col-md-3 {
@@ -178,22 +266,23 @@ div.center-wrap {
     font-family: "FB";
     font-size: 22px;
   }
-  
+
   #coaches {
     transform: scale(0.982);
     background-color: #ebe7db;
     padding-top: 50px;
     padding-bottom: 50px;
   }
-  #coaches h1{
+  #coaches h1 {
     text-align: center;
     background-color: #ebe7db;
     color: #0c1e40;
     padding: 20px;
-    font-family: 'AvoBoldIta';
+    font-family: "AvoBoldIta";
   }
 
-  .high-coaches, .low-coaches {
+  .high-coaches,
+  .low-coaches {
     display: block;
   }
   .container footer {
@@ -206,16 +295,17 @@ div.center-wrap {
     overflow: hidden;
     font-family: "AvoBold";
   }
-  
+
   .container footer div {
     padding: 30px;
   }
-  
+
   .container footer .fb-page {
     display: block;
   }
 
-  .high-coaches div, .low-coaches div {
+  .high-coaches div,
+  .low-coaches div {
     padding: 30px;
     margin: 30px;
     margin-left: auto;
