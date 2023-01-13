@@ -68,6 +68,7 @@ header p {
 
 body {
   font-family: sans-serif;
+  overflow-x: hidden; width: 100vw;
 }
 
 #introduction {
@@ -151,7 +152,7 @@ body #videos h2 {
   font-family: "FB";
 }
 
-#posts .more-info a{
+#posts .more-info a {
   background-color: #e75639;
   position: relative;
   color: #ebe7db;
@@ -162,8 +163,8 @@ body #videos h2 {
   padding: 10px;
   transition: 0.4s;
 }
-#videos .more-info a{
-  background-color:#ebe7db ;
+#videos .more-info a {
+  background-color: #ebe7db;
   position: relative;
   color: #e75639;
   font-family: "FB";
@@ -173,7 +174,7 @@ body #videos h2 {
   padding: 10px;
   transition: 0.4s;
 }
-#posts .more-info a:hover{
+#posts .more-info a:hover {
   background-color: #0b094d;
   position: relative;
   color: #ebe7db;
@@ -184,7 +185,7 @@ body #videos h2 {
   padding: 10px;
   transition: 0.4s;
 }
-#videos .more-info a:hover{
+#videos .more-info a:hover {
   background-color: #0b094d;
   position: relative;
   color: #ebe7db;
@@ -213,12 +214,13 @@ body #videos h2 {
   font-family: "AvoBold";
 }
 
-.container footer div {
+footer div {
   padding: 30px;
 }
 
-.container footer .fb-page {
+footer .fb-page {
   display: flex;
+  margin-left: -40px;
 }
 
 .high-coaches,
@@ -285,7 +287,7 @@ body #videos h2 {
   .low-coaches {
     display: block;
   }
-  .container footer {
+  .contacts footer {
     background-color: #0c1e40;
     color: #ebe7db;
     display: block;
@@ -296,12 +298,13 @@ body #videos h2 {
     font-family: "AvoBold";
   }
 
-  .container footer div {
+  .contacts footer div {
     padding: 30px;
   }
 
-  .container footer .fb-page {
+  .contacts footer .fb-page {
     display: block;
+    align-items: center;
   }
 
   .high-coaches div,
@@ -313,5 +316,39 @@ body #videos h2 {
     background-color: #0b094d;
     color: #ebe7db;
     font-family: "Helvetica";
+  }
+
+  body #posts {
+    justify-content: center;
+    text-align: center;
+    background-color: #ebe7db;
+    padding: 40px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  body #videos {
+    justify-content: center;
+    text-align: center;
+    background-color: #e75639;
+    width: 100%;
+  }
+  body #videos iframe {
+    justify-content: center;
+    text-align: center;
+    background-color: #f1f1f1;
+    width: 100%;
+    max-height: 170px;
+  }
+
+  body #news {
+    display: block;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  body iframe {
+    display: block;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
   }
 }
