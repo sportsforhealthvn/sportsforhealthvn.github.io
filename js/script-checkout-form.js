@@ -27,7 +27,6 @@ let generateCheckoutForm = () => {
           border: 1px solid lightgrey;
           border-radius: 3px;
           margin-bottom: 30px">
-            <form action="/action_page.php">
               <div class="row">
                 <div class="col-50">
                   <h3>Billing Address</h3>
@@ -70,8 +69,7 @@ let generateCheckoutForm = () => {
                 <input type="checkbox" checked="checked" name="sameadr" />
                 Shipping address same as billing
               </label>
-              <input type="submit" onclick="bought()" value="Mua hàng" class="btn" />
-            </form>
+              <input id="bought" type="submit" onclick="bought()" value="Mua hàng" class="btn" />
           </div>
         </div>
         <div class="col-25">
@@ -104,34 +102,30 @@ let generateCheckoutForm = () => {
 
 generateCheckoutForm();
 
-let emailOutput=document.getElementsByTagName("input")[2]
-
-var nodemailer = require('nodemailer');
-
-var transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: 'sportsforhealthvn@gmail.com',
-    pass: 'fodesvxxivxiigze'
-  }
-});
-
-var mailOptions = {
-  from: 'sportsforhealthvn@gmail.com',
-  to: emailOutput,
-  subject: 'Sending Email using Node.js',
-  text: 'That was easy!'
-};
-
-
-transporter.sendMail(mailOptions, function(error, info){
-  if (error) {
-    console.log(error);
-  } else {
-    console.log('Email sent: ' + info.response);
-  }
-});
-
-let bought = () =>{
-  
+function bought()
+{
+    document.getElementById('bought').value = "Sending email..."
+    document.getElementById('bought').disabled = true
+    $.ajax
+    ({
+        url: 'http://localhost:4000',
+        type: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify
+        ({
+            name: document.getElementById('fname').value,
+            email:document.getElementById('email').value,
+            address:document.getElementById('adr').value,
+            city:document.getElementById('city').value,
+            items:basket
+        }),
+        success: function(data)
+        {
+            window.location.href = "email_success.html";
+        },
+        error: function()
+        {
+            window.location.href = "email_fail.html";
+        },
+    });
 }
