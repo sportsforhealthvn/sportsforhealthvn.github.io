@@ -108,7 +108,7 @@ function bought()
     document.getElementById('bought').disabled = true
     $.ajax
     ({
-        url: 'http://localhost:4000',
+        url: 'https://77cjeb.deta.dev/',
         type: 'POST',
         contentType: 'application/json',
         data: JSON.stringify
