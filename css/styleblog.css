@@ -41,7 +41,9 @@ header p {
   overflow: hidden;
   background-color: white;
 }
-
+.nav .icon {
+  display: none;
+}
 .nav a {
   float: left;
   display: flex;
