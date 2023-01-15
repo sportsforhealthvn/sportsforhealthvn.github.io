@@ -55,6 +55,9 @@ header p {
   font-family: "Eremitage";
 }
 
+.nav .icon {
+  display: none;
+}
 .nav a:hover {
   background-color: #0c1e40;
   color: #ebe7db;
@@ -68,7 +71,8 @@ header p {
 
 body {
   font-family: sans-serif;
-  overflow-x: hidden; width: 100vw;
+  overflow-x: hidden;
+  width: 100vw;
 }
 
 #introduction {
@@ -223,7 +227,7 @@ footer .fb-page {
   margin-left: -40px;
 }
 
-.md{
+.md {
   width: 1200px;
 }
 
@@ -253,8 +257,36 @@ footer .fb-page {
 }
 
 @media only screen and (max-width: 1200px) {
+  .nav a {
+    display: none;
+    
+  }
+  .nav a.icon {
+    float: right;
+    display: block;
+    width: 100%;
+  }
   * {
     max-width: 739px;
+    justify-content: center;
+  }
+
+  .nav.responsive {
+    position: relative;
+    transition: 0.4s;
+  }
+  .nav.responsive .icon {
+    position: relative;
+    transition: 0.4s;
+
+  }
+  .nav.responsive a {
+    float: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    transition: 0.4s;
   }
 
   #introduction {
@@ -356,4 +388,3 @@ footer .fb-page {
     width: 100%;
   }
 }
-

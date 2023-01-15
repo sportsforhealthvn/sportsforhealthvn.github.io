@@ -141,6 +141,38 @@ body #videos h2 {
 }
 
 @media only screen and (max-width: 1200px) {
+  .nav a {
+    display: none;
+    
+  }
+  .nav a.icon {
+    float: right;
+    display: block;
+    width: 100%;
+  }
+  * {
+    max-width: 739px;
+    justify-content: center;
+  }
+
+  .nav.responsive {
+    position: relative;
+    transition: 0.4s;
+  }
+  .nav.responsive .icon {
+    position: relative;
+    transition: 0.4s;
+
+  }
+  .nav.responsive a {
+    float: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    transition: 0.4s;
+  }
+
   * {
     max-width: 739px;
   }

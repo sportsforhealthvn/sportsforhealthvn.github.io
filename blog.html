@@ -43,20 +43,27 @@
   </head>
   <header>
     <div class="container">
-      <ul class="nav justify-content-center" id="menu">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html" style="background-color: #0c1e40; color: #ebe7db">TRANG CHỦ</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="schedule.html">LỊCH HỌC</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="shop.html">CỬA HÀNG</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="blog.html">TIN TỨC</a>
-        </li>
-      </ul>
+      <div class="nav" id="nav" style="justify-content: center;">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a class="nav-link" href="index.html" style="background-color: #0c1e40; color: #ebe7db">TRANG CHỦ</a>
+        <a class="nav-link" href="schedule.html">LỊCH HỌC</a>
+        <a class="nav-link" href="shop.html">CỬA HÀNG</a>
+        <a class="nav-link" href="blog.html">TIN TỨC</a>
+  
+      </div>
+  
+      <script>
+        function myFunction() {
+          var x = document.getElementById("nav");
+          if (x.className === "nav") {
+            x.className += " responsive";
+          } else {
+            x.className = "nav";
+          }
+        }
+      </script>
       <picture>
         <source srcset="images/header_logo.jpg" media="(max-width: 1000px) ">
         <source srcset="images/banner.jpg">
