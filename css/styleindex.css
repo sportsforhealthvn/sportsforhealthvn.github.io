@@ -257,6 +257,7 @@ footer .fb-page {
 }
 
 @media only screen and (max-width: 1200px) {
+
   .nav a {
     display: none;
     
@@ -278,7 +279,6 @@ footer .fb-page {
   .nav.responsive .icon {
     position: relative;
     transition: 0.4s;
-
   }
   .nav.responsive a {
     float: none;
