@@ -275,15 +275,16 @@ footer .fb-page {
   .nav.responsive {
     position: relative;
     transition: 0.4s;
+    
   }
   .nav.responsive .icon {
     position: relative;
     transition: 0.4s;
+    
   }
   .nav.responsive a {
     float: none;
-    display: flex;
-    flex-direction: column;
+    display: block;
     text-align: left;
     width: 100%;
     transition: 0.4s;
