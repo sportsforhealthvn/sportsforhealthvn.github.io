@@ -16,7 +16,7 @@
 }
 @font-face {
   font-family: "Helvetica";
-  src: url(fonts/Helvetica-LightOblique.ttf);
+  src: url(fonts/helveticaneue.ttf);
 }
 
 body {
@@ -265,7 +265,8 @@ footer .fb-page {
   }
   .nav a.icon {
     float: right;
-    display: block;
+    display: grid;
+    margin: auto;
     width: 100%;
   }
   * {
@@ -279,14 +280,15 @@ footer .fb-page {
     
   }
   .nav.responsive .icon {
-    position: relative;
+    display: grid;
+    margin: auto;
     transition: 0.4s;
     
   }
   .nav.responsive a {
     float: none;
     display: block;
-    text-align: left;
+    text-align: center;
     width: 100%;
     transition: 0.4s;
   }

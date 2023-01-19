@@ -149,7 +149,8 @@ body #videos h2 {
   }
   .nav a.icon {
     float: right;
-    display: block;
+    display: grid;
+    margin: auto;
     width: 100%;
   }
   * {
@@ -160,17 +161,18 @@ body #videos h2 {
   .nav.responsive {
     position: relative;
     transition: 0.4s;
+    
   }
   .nav.responsive .icon {
-    position: relative;
+    display: grid;
+    margin: auto;
     transition: 0.4s;
-
+    
   }
   .nav.responsive a {
     float: none;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+    display: block;
+    text-align: center;
     width: 100%;
     transition: 0.4s;
   }
