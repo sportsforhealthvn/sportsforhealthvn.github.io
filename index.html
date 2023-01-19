@@ -8,7 +8,11 @@
   <title>Trang chủ | SH - Sports For Health</title>
   <!-- Popper Development version -->
   <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+
+  <!-- JavaScript -->
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <div id="fb-root"></div>
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v15.0"
     nonce="G1CactDl"></script>
@@ -17,8 +21,8 @@
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!--Flickity full screen-->
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/flickity-fullscreen@2/fullscreen.css">
+  <script src="https://unpkg.com/flickity-fullscreen@2/fullscreen.js"></script>
 
   <link rel="stylesheet" href="css/bootstrap.css" />
   <!--  Embed CSS here-->
@@ -170,21 +174,26 @@
   <div class="container">
     <about>
       <img src="images/carousel-banner.jpg" alt="" style="width: 100%" draggable="false" />
-      <div class="center-wrap">
-        <script src="https://unpkg.com/flickity-fullscreen@2/fullscreen.js"></script>
-        <div class="gallery js-flickity"
-          data-flickity-options='{ "wrapAround": true, "pageDots": false, "fullscreen": true }'
-          style="background-color: #ebe7db; padding-bottom: 30px">
-          <img src="images/carousel1.jpg" alt="" draggable="false" />
-          <img src="images/carousel2.jpg" alt="" draggable="false" />
-          <img src="images/carousel3.jpg" alt="" draggable="false" />
-          <img src="images/carousel4.jpg" alt="" draggable="false" />
-          <img src="images/carousel5.jpg" alt="" draggable="false" />
-          <img src="images/carousel6.jpg" alt="" draggable="false" />
-          <img src="images/carousel7.jpg" alt="" draggable="false" />
-        </div>
-      </div>
       <!-- Flickity HTML init -->
+      <div class="carousel" data-flickity='{ "wrapAround": true, "pageDots": false, "fullscreen": true}'>
+        <img src="images/carousel1.jpg" alt="" draggable="false" />
+        <img src="images/carousel2.jpg" alt="" draggable="false" />
+        <img src="images/carousel3.jpg" alt="" draggable="false" />
+        <img src="images/carousel4.jpg" alt="" draggable="false" />
+        <img src="images/carousel5.jpg" alt="" draggable="false" />
+        <img src="images/carousel6.jpg" alt="" draggable="false" />
+        <img src="images/carousel7.jpg" alt="" draggable="false" />
+      </div>
+
+      <div class="mobile">
+        <img src="images/carousel1.jpg" alt="" draggable="false" />
+        <img src="images/carousel2.jpg" alt="" draggable="false" />
+        <img src="images/carousel3.jpg" alt="" draggable="false" />
+        <img src="images/carousel4.jpg" alt="" draggable="false" />
+        <img src="images/carousel5.jpg" alt="" draggable="false" />
+        <img src="images/carousel6.jpg" alt="" draggable="false" />
+        <img src="images/carousel7.jpg" alt="" draggable="false" />
+      </div>
     </about>
   </div>
 
@@ -210,7 +219,7 @@
         </div>
       </div>
 
-      
+
       <div class="col-lg-4 col-md-12">
         <h2>THỜI GIAN HOẠT ĐỘNG</h2>
         <p>Thứ 7: từ 14:30 - 18:30</p>

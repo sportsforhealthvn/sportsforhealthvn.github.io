@@ -111,6 +111,11 @@ body {
   background: white;
   width: 100%;
 }
+
+
+.gallery .is-fullscreen .img{
+  height: 100%;
+}
 div.center-wrap {
   display: flex;
   justify-content: center;
@@ -202,11 +207,31 @@ body #videos h2 {
   transition: 0.4s;
 }
 
-.gallery img {
+.mobile{
+  display: none;
+}
+
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #ebe7db;
+  padding-bottom: 10px;
+}
+
+.carousel img{
   width: 50%;
   margin-left: 10px;
   margin-right: 10px;
 }
+
+.carousel.is-fullscreen img {
+  height: 100%;
+}
+
 
 .container footer {
   background-color: #0c1e40;
@@ -323,6 +348,9 @@ footer .fb-page {
     font-family: "AvoBoldIta";
   }
 
+ 
+
+  
   .high-coaches,
   .low-coaches {
     display: block;
