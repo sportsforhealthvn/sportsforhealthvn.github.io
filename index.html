@@ -1,232 +1,310 @@
 <!DOCTYPE html>
 <html lang="Vietnamese">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang chủ | SH - Sports For Health</title>
+    <!-- Popper Development version -->
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trang chủ | SH - Sports For Health</title>
-  <!-- Popper Development version -->
-  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v15.0"
+      nonce="G1CactDl"
+    ></script>
+    <script src="js/scriptindex.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Flickity full screen-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity-fullscreen@2/fullscreen.css"
+    />
+    <script src="https://unpkg.com/flickity-fullscreen@2/fullscreen.js"></script>
 
-  <!-- JavaScript -->
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <!-- CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-  <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v15.0"
-    nonce="G1CactDl"></script>
-  <script src="js/scriptindex.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!--Flickity full screen-->
-  <link rel="stylesheet" href="https://unpkg.com/flickity-fullscreen@2/fullscreen.css">
-  <script src="https://unpkg.com/flickity-fullscreen@2/fullscreen.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!--  Embed CSS here-->
+    <link href="css/styleindex.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <!--Bootstrap icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+  </head>
 
-  <link rel="stylesheet" href="css/bootstrap.css" />
-  <!--  Embed CSS here-->
-  <link href="css/styleindex.css" rel="stylesheet" type="text/css" />
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-  <!--Bootstrap icons-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+  <header>
+    <div class="container">
+      <div class="nav" id="nav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a
+          class="nav-link"
+          href="index.html"
+          style="background-color: #0c1e40; color: #ebe7db"
+          >TRANG CHỦ</a
+        >
+        <a class="nav-link" href="schedule.html">LỊCH HỌC</a>
+        <a class="nav-link" href="shop.html">CỬA HÀNG</a>
+        <a class="nav-link" href="blog.html">TIN TỨC</a>
+      </div>
 
-</head>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("nav");
+          if (x.className === "nav") {
+            x.className += " responsive";
+          } else {
+            x.className = "nav";
+          }
+        }
+      </script>
 
-<header>
-  <div class="container">
+      <picture>
+        <source srcset="images/header_logo.jpg" media="(max-width: 1000px) " />
+        <source srcset="images/banner.jpg" />
+        <img
+          style="align-items: center; width: 100%"
+          src="images/banner.jpg"
+          alt="The official home for SH - Sports For Health"
+          draggable="false"
+        />
+      </picture>
+      <img src="images/about_banner.jpg" style="width: 100%" alt="" />
+    </div>
+  </header>
 
+  <body>
+    <div class="container reveal" id="introduction">
+      <div class="col-lg-3 col-md-12">
+        <h3 style="text-align: center">GIỚI THIỆU</h3>
+        <div
+          style="text-align: left; font-family: 'Helvetica'; font-size: 18px"
+        >
+          Trung tâm thể thao SH-SPORTS for HEALTH được chính thức thành lập vào
+          ngày 27/4/2020. Sau khoảng 5 năm hoạt động. Hiện tại toàn hệ thống SH
+          – SPORTS for HEALTH gồm 7 lớp tập tại 3 địa điểm sân đó là: sân bóng
+          THCS Thực Nghiệm, sân bóng 671 Hoàng Hoa Thám, sân bóng trường ĐH Giao
+          thông vận tải. Hiện tại trung tâm SH vẫn đang liên tục duy trì mở các
+          đợt tuyển sinh để đón những học viên mới. Với khẩu hiệu “thể thao vì
+          sức khỏe”, tại đây chúng tôi cam kết sẽ đem đến cho các học viên một
+          sân chơi bổ ích bằng những buổi tập thật sự chất lượng.
+        </div>
+      </div>
+      <img src="images/about_page.jpg" alt="" />
+    </div>
+    <div class="container reveal" id="news">
+      <!--Add posts here-->
 
-    <div class="nav" id="nav">
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-      <a class="nav-link" href="index.html" style="background-color: #0c1e40; color: #ebe7db">TRANG CHỦ</a>
-      <a class="nav-link" href="schedule.html">LỊCH HỌC</a>
-      <a class="nav-link" href="shop.html">CỬA HÀNG</a>
-      <a class="nav-link" href="blog.html">TIN TỨC</a>
+      <div class="col-lg-6 col-md-12" id="posts">
+        <div>
+          <h2><i class="bi bi-newspaper"></i> BÀI ĐĂNG MỚI NHẤT</h2>
+        </div>
+        <iframe
+          src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FSfH.SPORTSforHEALTH%2Fposts%2Fpfbid02hGY9izjom1yST3nmTHoTUyaohkPBwDNEvYA9VXnPpFkgwKNvxTW2pryAwWAtPZfpl&show_text=true&width=500"
+          width="500"
+          height="756"
+          style="border: none; overflow: hidden; background-color: white"
+          scrolling="no"
+          frameborder="0"
+          allowfullscreen="true"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+        ></iframe>
+        <div class="more-info">
+          <a href="blog.html">XEM THÊM</a>
+        </div>
+      </div>
 
+      <!--Add videos here-->
+      <div class="col-lg-6 col-md-12" id="videos">
+        <div>
+          <h2><i class="bi bi-play-btn"></i> VIDEO MỚI NHẤT</h2>
+        </div>
+
+        <iframe
+          src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FSfH.SPORTSforHEALTH%2Fvideos%2F719964799745083%2F&show_text=false&width=560&t=0"
+          width="480"
+          height="370"
+          style="border: none; overflow: hidden; align-items: center"
+          scrolling="no"
+          frameborder="0"
+          allowfullscreen="true"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          allowfullscreen="true"
+        ></iframe>
+        <iframe
+          src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FSfH.SPORTSforHEALTH%2Fvideos%2F1209486419960845%2F&show_text=false&width=560&t=0"
+          width="480"
+          height="370"
+          style="border: none; overflow: hidden; align-items: center"
+          scrolling="no"
+          frameborder="0"
+          allowfullscreen="true"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          allowfullscreen="true"
+        ></iframe>
+        <div class="more-info">
+          <a href="blog.html">XEM THÊM</a>
+        </div>
+      </div>
+    </div>
+    <div class="container reveal" id="coaches">
+      <div class="col-12">
+        <h1>GÓC GIẢNG VIÊN</h1>
+      </div>
+      <div class="high-coaches">
+        <div class="col-lg-4 col-md-12 reveal">
+          <img src="images/coach_placeholder.jpg" alt="" />
+          <div class="introduction">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+            vitae explicabo totam corporis aut quae quas illum iste, ratione ad
+            quis magnam ab velit nesciunt placeat necessitatibus culpa cumque
+            vero?
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 reveal">
+          <img src="images/coach_placeholder.jpg" alt="" />
+          <div class="introduction">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+            vitae explicabo totam corporis aut quae quas illum iste, ratione ad
+            quis magnam ab velit nesciunt placeat necessitatibus culpa cumque
+            vero?
+          </div>
+        </div>
+      </div>
+      <div class="low-coaches">
+        <div class="col-lg-4 col-md-12 reveal">
+          <img src="images/coach_placeholder.jpg" alt="" />
+          <div class="introduction">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+            vitae explicabo totam corporis aut quae quas illum iste, ratione ad
+            quis magnam ab velit nesciunt placeat necessitatibus culpa cumque
+            vero?
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 reveal">
+          <img src="images/coach_placeholder.jpg" alt="" />
+          <div class="introduction">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+            vitae explicabo totam corporis aut quae quas illum iste, ratione ad
+            quis magnam ab velit nesciunt placeat necessitatibus culpa cumque
+            vero?
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container reveal">
+      <about>
+        <img
+          src="images/carousel-banner.jpg"
+          alt=""
+          style="width: 100%"
+          draggable="false"
+        />
+        <!-- Flickity HTML init -->
+        <div
+          class="carousel"
+          data-flickity='{ "wrapAround": true, "pageDots": false, "fullscreen": true}'
+        >
+          <img src="images/carousel1.jpg" alt="" draggable="false" />
+          <img src="images/carousel2.jpg" alt="" draggable="false" />
+          <img src="images/carousel3.jpg" alt="" draggable="false" />
+          <img src="images/carousel4.jpg" alt="" draggable="false" />
+          <img src="images/carousel5.jpg" alt="" draggable="false" />
+          <img src="images/carousel6.jpg" alt="" draggable="false" />
+          <img src="images/carousel7.jpg" alt="" draggable="false" />
+        </div>
+
+        <div class="mobile">
+          <img src="images/carousel1.jpg" alt="" draggable="false" />
+          <img src="images/carousel2.jpg" alt="" draggable="false" />
+          <img src="images/carousel3.jpg" alt="" draggable="false" />
+          <img src="images/carousel4.jpg" alt="" draggable="false" />
+          <img src="images/carousel5.jpg" alt="" draggable="false" />
+          <img src="images/carousel6.jpg" alt="" draggable="false" />
+          <img src="images/carousel7.jpg" alt="" draggable="false" />
+        </div>
+      </about>
     </div>
 
-    <script>
-      function myFunction() {
-        var x = document.getElementById("nav");
-        if (x.className === "nav") {
-          x.className += " responsive";
+    <div class="container">
+      <footer>
+        <div class="col-lg-4 col-md-12">
+          <h2>ĐỊA CHỈ</h2>
+          <p>Cơ sở 1: Số 3 đường Cầu Giấy, Hà Nội</p>
+          <p>Cơ sở 2: 671 đường Hoàng Hoa Thám, Ba Đình , Hà Nội</p>
+          <p>Cơ sở 3: Số 5 dốc Đốc Ngữ, Ba Đình, Hà Nội</p>
+          <p>Cơ sở 4: 50 P Liễu Giai, Ba Đình, Hà Nội, Hanoi, Vietnam</p>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <h2>LIÊN HỆ</h2>
+          <p>SĐT: 097 676 58 52</p>
+          <p>Email: ngotientam1984@gmail.com</p>
+          <div
+            class="fb-page"
+            data-href="https://www.facebook.com/SfH.SPORTSforHEALTH"
+            data-tabs=""
+            data-width=""
+            data-height=""
+            data-small-header="true"
+            data-adapt-container-width="false"
+            data-hide-cover="false"
+            data-show-facepile="false"
+          >
+            <blockquote
+              cite="https://www.facebook.com/SfH.SPORTSforHEALTH"
+              class="fb-xfbml-parse-ignore"
+            >
+              <a href="https://www.facebook.com/SfH.SPORTSforHEALTH"
+                >Trung tâm SH</a
+              >
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <h2>THỜI GIAN HOẠT ĐỘNG</h2>
+          <p>Thứ 7: từ 14:30 - 18:30</p>
+          <p>Chủ Nhật: từ 14:30 - 18:30</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script type="text/javascript">
+    window.addEventListener("scroll", reveal);
+
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+
+      for (var i = 0; i < reveals.length; i++) {
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if (revealtop < windowheight - revealpoint) {
+          reveals[i].classList.add("active");
         } else {
-          x.className = "nav";
+          reveals[i].classList.remove("active");
         }
       }
-    </script>
-
-    <picture>
-      <source srcset="images/header_logo.jpg" media="(max-width: 1000px) ">
-      <source srcset="images/banner.jpg">
-      <img style="align-items: center; width: 100%" src="images/banner.jpg"
-        alt="The official home for SH - Sports For Health" draggable="false" />
-    </picture>
-    <img src="images/about_banner.jpg" style="width: 100%" alt="" />
-  </div>
-</header>
-
-<body>
-  <div class="container" id="introduction">
-    <div class="col-lg-3 col-md-12">
-      <h3 style="text-align: center">GIỚI THIỆU</h3>
-      <div style="text-align: left; font-family: 'Helvetica';font-size: 18px;">
-        Trung tâm thể thao SH-SPORTS for HEALTH được chính thức thành lập vào ngày 27/4/2020. Sau khoảng 5 năm hoạt
-        động.
-        Hiện tại toàn hệ thống SH – SPORTS for HEALTH gồm 7 lớp tập tại 3 địa điểm sân đó là: sân bóng THCS Thực Nghiệm,
-        sân bóng 671 Hoàng Hoa Thám, sân bóng trường ĐH Giao thông vận tải. Hiện tại trung tâm SH vẫn đang liên tục duy
-        trì mở các đợt tuyển
-        sinh để đón những học viên mới. Với khẩu hiệu “thể thao vì sức khỏe”, tại đây chúng tôi cam kết sẽ đem đến cho
-        các học viên một sân chơi bổ ích bằng những buổi tập thật sự chất lượng.
-      </div>
-    </div>
-    <img src="images/about_page.jpg" alt="" />
-  </div>
-  <div class="container" id="news">
-    <!--Add posts here-->
-
-    <div class="col-lg-6 col-md-12" id="posts">
-      <div>
-        <h2><i class="bi bi-newspaper"></i> BÀI ĐĂNG MỚI NHẤT</h2>
-      </div>
-      <iframe
-        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FSfH.SPORTSforHEALTH%2Fposts%2Fpfbid02hGY9izjom1yST3nmTHoTUyaohkPBwDNEvYA9VXnPpFkgwKNvxTW2pryAwWAtPZfpl&show_text=true&width=500"
-        width="500" height="756" style="border: none; overflow: hidden; background-color: white" scrolling="no"
-        frameborder="0" allowfullscreen="true"
-        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-      <div class="more-info">
-        <a href="blog.html">XEM THÊM</a>
-      </div>
-    </div>
-
-    <!--Add videos here-->
-    <div class="col-lg-6 col-md-12" id="videos">
-      <div>
-        <h2><i class="bi bi-play-btn"></i> VIDEO MỚI NHẤT</h2>
-      </div>
-
-      <iframe
-        src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FSfH.SPORTSforHEALTH%2Fvideos%2F719964799745083%2F&show_text=false&width=560&t=0"
-        width="480" height="370" style="border: none; overflow: hidden; align-items: center;" scrolling="no"
-        frameborder="0" allowfullscreen="true"
-        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-        allowfullscreen="true"></iframe>
-      <iframe
-        src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FSfH.SPORTSforHEALTH%2Fvideos%2F1209486419960845%2F&show_text=false&width=560&t=0"
-        width="480" height="370" style="border: none; overflow: hidden; align-items: center;" scrolling="no"
-        frameborder="0" allowfullscreen="true"
-        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-        allowfullscreen="true"></iframe>
-      <div class="more-info">
-        <a href="blog.html">XEM THÊM</a>
-      </div>
-    </div>
-  </div>
-  <div class="container" id="coaches">
-    <div class="col-12">
-      <h1>GÓC GIẢNG VIÊN</h1>
-    </div>
-    <div class="high-coaches">
-      <div class="col-lg-4 col-md-12">
-        <img src="images/coach_placeholder.jpg" alt="" />
-        <div class="introduction">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-          vitae explicabo totam corporis aut quae quas illum iste, ratione ad
-          quis magnam ab velit nesciunt placeat necessitatibus culpa cumque
-          vero?
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-12">
-        <img src="images/coach_placeholder.jpg" alt="" />
-        <div class="introduction">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-          vitae explicabo totam corporis aut quae quas illum iste, ratione ad
-          quis magnam ab velit nesciunt placeat necessitatibus culpa cumque
-          vero?
-        </div>
-      </div>
-    </div>
-    <div class="low-coaches">
-      <div class="col-lg-4 col-md-12">
-        <img src="images/coach_placeholder.jpg" alt="" />
-        <div class="introduction">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-          vitae explicabo totam corporis aut quae quas illum iste, ratione ad
-          quis magnam ab velit nesciunt placeat necessitatibus culpa cumque
-          vero?
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-12">
-        <img src="images/coach_placeholder.jpg" alt="" />
-        <div class="introduction">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-          vitae explicabo totam corporis aut quae quas illum iste, ratione ad
-          quis magnam ab velit nesciunt placeat necessitatibus culpa cumque
-          vero?
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <about>
-      <img src="images/carousel-banner.jpg" alt="" style="width: 100%" draggable="false" />
-      <!-- Flickity HTML init -->
-      <div class="carousel" data-flickity='{ "wrapAround": true, "pageDots": false, "fullscreen": true}'>
-        <img src="images/carousel1.jpg" alt="" draggable="false" />
-        <img src="images/carousel2.jpg" alt="" draggable="false" />
-        <img src="images/carousel3.jpg" alt="" draggable="false" />
-        <img src="images/carousel4.jpg" alt="" draggable="false" />
-        <img src="images/carousel5.jpg" alt="" draggable="false" />
-        <img src="images/carousel6.jpg" alt="" draggable="false" />
-        <img src="images/carousel7.jpg" alt="" draggable="false" />
-      </div>
-
-      <div class="mobile">
-        <img src="images/carousel1.jpg" alt="" draggable="false" />
-        <img src="images/carousel2.jpg" alt="" draggable="false" />
-        <img src="images/carousel3.jpg" alt="" draggable="false" />
-        <img src="images/carousel4.jpg" alt="" draggable="false" />
-        <img src="images/carousel5.jpg" alt="" draggable="false" />
-        <img src="images/carousel6.jpg" alt="" draggable="false" />
-        <img src="images/carousel7.jpg" alt="" draggable="false" />
-      </div>
-    </about>
-  </div>
-
-  <div class="container">
-    <footer>
-      <div class="col-lg-4 col-md-12">
-        <h2>ĐỊA CHỈ</h2>
-        <p>Cơ sở 1: Số 3 đường Cầu Giấy, Hà Nội</p>
-        <p>Cơ sở 2: 671 đường Hoàng Hoa Thám, Ba Đình , Hà Nội</p>
-        <p>Cơ sở 3: Số 5 dốc Đốc Ngữ, Ba Đình, Hà Nội</p>
-        <p>Cơ sở 4: 50 P Liễu Giai, Ba Đình, Hà Nội, Hanoi, Vietnam</p>
-      </div>
-
-      <div class="col-lg-4 col-md-12">
-        <h2>LIÊN HỆ</h2>
-        <p>SĐT: 097 676 58 52</p>
-        <p>Email: ngotientam1984@gmail.com</p>
-        <div class="fb-page" data-href="https://www.facebook.com/SfH.SPORTSforHEALTH" data-tabs="" data-width=""
-          data-height="" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false"
-          data-show-facepile="false">
-          <blockquote cite="https://www.facebook.com/SfH.SPORTSforHEALTH" class="fb-xfbml-parse-ignore"><a
-              href="https://www.facebook.com/SfH.SPORTSforHEALTH">Trung tâm SH</a></blockquote>
-        </div>
-      </div>
-
-
-      <div class="col-lg-4 col-md-12">
-        <h2>THỜI GIAN HOẠT ĐỘNG</h2>
-        <p>Thứ 7: từ 14:30 - 18:30</p>
-        <p>Chủ Nhật: từ 14:30 - 18:30</p>
-      </div>
-    </footer>
-  </div>
-</body>
-
+    }
+  </script>
 </html>

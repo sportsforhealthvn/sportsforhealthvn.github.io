@@ -106,7 +106,25 @@ body {
   padding: 20px;
   font-family: "AvoBoldIta";
 }
-
+.high-coaches div,
+.low-coaches div {
+  padding: 15px;
+  margin: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #0b094d;
+  color: #ebe7db;
+  font-family: "Helvetica";
+  font-size: 20px;
+}
+.high-coaches div img,
+.low-coaches div img {
+  align-items: center;
+  position: relative;
+  left: -15px;
+  top: -15px;
+  width: 107.37%;
+}
 .gallery {
   background: white;
   width: 100%;
@@ -262,24 +280,16 @@ footer .fb-page {
   display: flex;
 }
 
-.high-coaches div,
-.low-coaches div {
-  padding: 15px;
-  margin: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #0b094d;
-  color: #ebe7db;
-  font-family: "Helvetica";
-  font-size: 20px;
-}
-.high-coaches div img,
-.low-coaches div img {
-  align-items: center;
+.reveal{
   position: relative;
-  left: -15px;
-  top: -15px;
-  width: 107.37%;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1.5s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
 }
 
 @media only screen and (max-width: 1200px) {
